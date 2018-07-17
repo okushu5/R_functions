@@ -2,3 +2,5 @@
 all.vars(object$terms)[attr(object$terms,"response")]
 
 all.vars(object$terms)[-attr(object$terms,"response")]
+
+test <- rnorm(100)
