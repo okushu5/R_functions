@@ -29,7 +29,8 @@ contribution2 = function(GLMobj, EvalFunction = sd){
 		for (v1 in xVars){
 			if (v1!=var1){ PredData[[v1]] = PredData[[v1]][1] }
 			}
-	if (all(class(GLMobj=='lm'){
+
+	if (all(class(GLMobj)=='lm')){
 		PredData$p = predict(GLMobj, newdata=PredData)
 		} else {
 		PredData$p = predict(GLMobj, newdata=PredData, type='link')
