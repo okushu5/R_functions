@@ -13,7 +13,7 @@ o <- apply(predict(GLM_or_GAM_obj, type='terms'),2,sd)
 return(o/sum(o))
 }
 
-Contribution2 = function(GLMobj, EvalFunction = sd){
+contribution2 = function(GLMobj, EvalFunction = sd){
 	# Change one variable at a time and see how predications change, while holding other variables constant.
 	# This version works also if pmin(x1, 0.8) and as.factor are in the model.
 	# Works also for mcv:gam objects.
